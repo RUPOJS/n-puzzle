@@ -80,15 +80,7 @@ var tbl, rows, cols,moves = 0;
 
             while (inversions % 2 == 1) {
                 arrN = Shuffle(arrN);
-                //                var t = "";
-                //                for (var i = 0; i < arrN.length; i++) {
-                //                    t += arrN[i] + ", ";
-                //                }
-                //                alert(t);
-
-                //Now check if the resulting array is solvable
-                //http://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html
-
+               
                 inversions = 0;
                 for (var i = 0; i < arrN.length; i++) {
                     for (var j = i; j < arrN.length; j++) {
