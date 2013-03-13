@@ -1,0 +1,43 @@
+ *
+        {
+            font-family: Verdana;
+        }
+        body
+        {
+            font-size: 10pt;
+        }
+        .cell
+        {
+            width: 50px;
+        }
+        .num
+        {
+            padding: 8px 0;
+            border: 1px solid #0099FF;
+            background-color: #CCFFFF;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            color: #0099FF;
+            cursor: pointer;
+        }
+        #moves
+        {
+            border: 1px solid #FF6600;
+            background-color: #FFFFCC;
+            font-weight: bold;
+            padding: 2px 5px;
+            color: #FF6600;
+        }
+        a
+        {
+            color: Blue;
+        }
+        #descript
+        {
+            display: block;
+            width: 500px;
+            text-align: justify;
+            font-size: 0.8em;
+            color:#909090;
+        }
