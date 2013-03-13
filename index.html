@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>n-Puzzle in JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="Reset();">
+    <center>
+        <h2> n-Puzzle in JavaScript</h2>
+        <br/>
+        <table cellpadding="0" cellspacing="4" align="center" id="tbl">
+        <tbody><tr><td class="cell"><div id="n1" class="num" onclick="Move(this);">1</div></td><td class="cell"><div id="n2" class="num" onclick="Move(this);">2</div></td><td class="cell"><div id="n3" class="num" onclick="Move(this);">3</div></td><td class="cell"><div id="n13" class="num" onclick="Move(this);">13</div></td></tr><tr><td class="cell"><div id="n14" class="num" onclick="Move(this);">14</div></td><td class="cell"><div id="n10" class="num" onclick="Move(this);">10</div></td><td class="cell"><div id="n6" class="num" onclick="Move(this);">6</div></td><td class="cell"><div id="n4" class="num" onclick="Move(this);">4</div></td></tr><tr><td class="cell"><div id="n12" class="num" onclick="Move(this);">12</div></td><td class="cell"><div id="n9" class="num" onclick="Move(this);">9</div></td><td class="cell"><div id="n15" class="num" onclick="Move(this);">15</div></td><td class="cell"></td></tr><tr><td class="cell"><div id="n11" class="num" onclick="Move(this);">11</div></td><td class="cell"><div id="n5" class="num" onclick="Move(this);">5</div></td><td class="cell"><div id="n7" class="num" onclick="Move(this);">7</div></td><td class="cell"><div id="n8" class="num" onclick="Move(this);">8</div></td></tr></tbody></table>
+        <br/>
+        <br/>
+        <br/>
+        <input type="text" name="rows" id="rows" value="4" size="3" style="text-align: center;">
+        X
+        <input type="text" name="cols" id="cols" value="4" size="3" style="text-align: center;">
+        <input type="button" value="New Game" onclick="Reset();">
+        <br/>
+        <br/>
+        Moves: <span id="moves">161</span>
+        <br/>
+        <br/>
+        <span id="descript"><strong>From Wikipedia</strong> - The n-puzzle is a classical problem for modelling algorithms involving heuristics.The 15-puzzle (also called Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic Square and many others) is a sliding puzzle that consists of a frame of numbered square tiles in random order with one tile missing, the puzzle is called the 15-puzzle or 16-puzzle named, respectively, for the number of tiles and the number of spaces. The object of the puzzle is to place the tiles in order by making sliding moves that use the empty space.
+            <br/>
+            <a href="http://en.wikipedia.org/wiki/Fifteen_puzzle">Continue Reading Here</a> </span>
+        <br/>
+        <br/>
+        <br/>
+        Developed by <a href="http://twitter.com/rupojs">rupojs</a>
+    </center>
+
+
+</body>
+</html>
