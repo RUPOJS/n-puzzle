@@ -1,7 +1,7 @@
 var tbl, rows, cols,moves = 0;
 
         function Move(d) {
-            //Get the td
+            //Get the td and move the cells.
             var cell = GetCell(d);
             var row = GetRow(cell);
             var ri = row.rowIndex;
@@ -33,7 +33,7 @@ var tbl, rows, cols,moves = 0;
                 IsInOrder();
             }
         }
-
+        //check the order of cells.
         function IsInOrder() {
             var arrDiv = document.getElementsByTagName("DIV");
             var inorder = true;
@@ -52,7 +52,7 @@ var tbl, rows, cols,moves = 0;
                 alert("Perfect! It took you " + moves + " moves to solve it.");
             }
         }
-
+        //to reset.
         function Reset() {
             moves = 0;
             document.getElementById("moves").innerHTML = moves;
@@ -107,7 +107,7 @@ var tbl, rows, cols,moves = 0;
                 }
             }
         }
-
+        //to shuffle the cells.
         function Shuffle(o) {
             for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
             return o;
@@ -187,7 +187,7 @@ var tbl, rows, cols,moves = 0;
             }
             return str;
         }
-
+       //to change the parent of cell.
         function ChangeParent(sourceElement, targetElement) {
             var sourceElementParent = sourceElement.parentNode;
             sourceElementParent.removeChild(sourceElement);
